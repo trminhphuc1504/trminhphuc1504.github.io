@@ -1,39 +1,31 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background: linear-gradient(45deg, #00bcd4, #4caf50); /* Gradient màu xanh dương và xanh lá */
+  color: #fff;
   line-height: 1.6;
-}
-
-h1 {
-  color: #0056b3;
-  text-align: center;
-}
-
-h2 {
-  color: #333;
-}
-
-a {
-  color: #0056b3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-  background-color: #f8f9fa;
-  padding: 20px;
   text-align: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt để dễ nhìn */
+  border-radius: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
 }
 
-li {
-  margin: 10px 0;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
